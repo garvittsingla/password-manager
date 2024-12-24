@@ -50,7 +50,7 @@ const Dashboard = () => {
 
   const logout = () => {
     localStorage.clear();
-    navigate("/login");
+    navigate("/");
   };
 
   return (
