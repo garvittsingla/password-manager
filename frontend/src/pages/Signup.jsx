@@ -20,7 +20,7 @@ const Signup = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try{
-        const res = await axios.post('http://localhost:8000/api/users', {
+        const res = await axios.post('https://password-manager-skdj.onrender.com/api/users', {
             firstname: firstname,
             email:email,
             password:password

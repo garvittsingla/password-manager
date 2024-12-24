@@ -20,14 +20,14 @@ const Dashboard = () => {
   const notify = () => toast.success("Password saved");
 
   const getpasswords = async () => {
-    const res = await axios.get("http://localhost:8000/api/passwords/", config);
+    const res = await axios.get("https://password-manager-skdj.onrender.com/api/passwords/", config);
     setall(res.data.passwords);
   };
 
   const handlebutton = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/api/passwords/", {
+      await axios.post("https://password-manager-skdj.onrender.com/api/passwords/", {
         singlepassword: singlepassword,
         siteurl: siteurl
       }, config);

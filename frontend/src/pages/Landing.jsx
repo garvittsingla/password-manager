@@ -56,8 +56,8 @@ const Landing = () => {
             </div>
           </div>
         </section>
-        <div className='w-full h-[25%]'>
-          <video loop autoPlay muted className='h-full w-auto rounded-lg' src="landingvid.mp4"></video>
+        <div className='flex justify-center py-10'>
+          <video loop autoPlay muted className='h-[500px] w-auto rounded-lg' src="landingvid.mp4"></video>
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@ const Login = () => {
   async function onSubmit(e){
     e.preventDefault()
     try {
-        const res = await axios.post("http://localhost:8000/api/users/login",{
+        const res = await axios.post("https://password-manager-skdj.onrender.com/api/users/login",{
             email:email,
             password:password
         })
