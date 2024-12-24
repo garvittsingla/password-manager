@@ -16,7 +16,7 @@ const Card = ({ siteurl, singlepassword, id, onDelete }) => {
             const config = {
                 headers: { Authorization: `Bearer ${token}` }
             };
-            await axios.delete(`http://localhost:8000/api/passwords/${id}`, config);
+            await axios.delete(`https://password-manager-skdj.onrender.com/api/passwords/${id}`, config);
             onDelete(id);
         } catch (err) {
             console.error(err);
